@@ -1,10 +1,9 @@
 const { Schema, model } = require("mongoose");
-const { Schema, model } = mongoose;
 
 const taskSchema = new Schema({
-  title: {String, required: true},
+  title: {type: String, required: true},
   description: String,
-  project: {type: Schema.Type.ObjectId, ref: "Project", required: true}
+  project: {type: Schema.Types.ObjectId, ref: "Project", required: true}
 });
 
 

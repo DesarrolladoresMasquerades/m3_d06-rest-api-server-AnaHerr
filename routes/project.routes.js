@@ -1,6 +1,7 @@
 const express = require("express")
 const router = express.Router();
 const mongoose = require("mongoose")
+const Project = require("../models/Project.model");
 
 router.get("/:projectId", (req, res)=>{
   Project.findById(req.params.projectId)

@@ -14,7 +14,7 @@ const projectRouter = require("./routes/project.routes");
 app.use("/api/projects", projectRouter);
 
 const taskRouter = require("./routes/task.routes");
-app.use("/api", taskRouter);
+app.use("/api/tasks", taskRouter);
 
 require("./error-handling")(app);
 
